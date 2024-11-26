@@ -1,7 +1,7 @@
 def triangle_pattern(filename, length):
     content = ""
-    for i in range (1, length + 2):
-        content += "*" * (length + 2 - i) + "\n"
+    for i in range (length):
+        content += "*" * (length - i) + "\n"
     with open(filename, "w") as file:
         file.write(content)
 
